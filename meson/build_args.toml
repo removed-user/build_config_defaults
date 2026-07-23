@@ -1,1 +1,42 @@
-/etc/meson/build_args.toml
+#Cmake
+    build_pkg_config_path = '[]'
+    build_cmake_prefix_path = []
+#C Args_Build
+    build_c_args = []
+    build_c_link_args = []
+
+#CPP Args_Build
+     build_cpp_args = []
+     build_cpp_link_args = []
+     build_cpp_debugstl = false
+     build_cpp_eh = 'default'
+     build_cpp_rtti = false
+     build_cpp_thread_count = 0
+
+#Obj C Args_Build
+     build_objc_args = []
+     build_objc_link_args = []
+
+#Obj Cpp Args_Build
+     build_objcpp_args = []
+     build_objcpp_link_args = []
+
+#Assembly Args_Build
+     build_assembly_args = []
+     build_assembly_link_args = []
+
+#LLVM Args_Build
+     build_llvm_ir_args = []
+     build_llvm_ir_link_args = []
+
+#Nasm Args_Build
+     build_nasm_args = []
+     build_nasm_link_args = []
+
+#Rust Args_Build
+     build_rust_args = []
+     build_rust_link_args = []
+
+#Vala Args_Build
+     build_vala_args = []
+     build_vala_link_args = []

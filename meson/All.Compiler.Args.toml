@@ -1,1 +1,120 @@
-/etc/meson/All.Compiler.Args.toml
+[binaries]
+#Compilers
+c = 'gcc'
+cpp = 'g++'
+
+objc = ''
+objcpp = ''
+# objc = 'clang'
+# objcpp = 'clang++'
+rust = 'rustc'
+
+# Other binaries
+ar = 'ar'
+as = 'as'
+cmake = 'cmake'
+ld = 'bfd'
+llvm-config = 'llvm-config'
+make = 'make'
+nm = 'nm'
+objcopy = 'objcopy'
+objdump = 'objdump'
+pkg-config = 'pkg-config'
+ranlib = 'ranlib'
+readelf = 'readelf'
+size = 'size'
+strings = 'strings'
+
+[built-in options]
+#C Args_Std
+#c_args = '[]'
+#c_link_args = '[]'
+
+#CPP Args_Std
+#cpp_args = []
+#cpp_link_args = []
+
+#cpp_debugstl = false
+#cpp_eh = 'default'
+#cpp_rtti = false
+#cpp_thread_count = 0
+
+# b_largefile = 'enabled'
+#c_thread_count = 4
+#errorlogs = true
+
+#Static/Shared Libraries
+#b_staticpic = 'true'
+
+#cmake_prefix_path = []
+#backend_max_links = 0
+
+
+#Acceptable Values: 0|g|1|2|3|s
+#pkg_config_path = '[]'
+#LTO
+
+#b_lto = true
+#b_lto_threads = 0
+#b_lto_mode = 'default'
+#b_thinlto_cache = false
+#b_thinlto_cache_dir = ''
+
+# b_coverage = <true|false> - Enable coverage tracking.
+# b_lundef = <true|false> - Use -Wl,--no-undefined when linking
+# b_pch = <true|false> - Use precompiled headers
+# b_pgo = <off|generate|use> - Use profile guided optimization
+# b_sanitize = <none|address|thread|undefined|memory|leak|address,undefined> - Code sanitizer to use
+# b_pie = <true|false> - Build executables as position independent
+
+#Acceptable: |debug|debugoptimized|release|minsize|custom
+#b_clang_format = 'enabled'
+#debug = false
+
+#Python (parser) Ninja/Samu Options
+
+#Windows
+cpp_winlibs = []
+build.cpp_winlibs = []
+c_winlibs = []
+build.c_winlibs = []
+build.masm_args = []
+build.masm_link_args = []
+masm_args = []
+masm_link_args = []
+b_vscrt = 'none'
+
+#Macos
+#b_bitcode = false
+
+
+# Args_Std
+#Obj C Args_Std
+    objc_args = []
+    objc_link_args = []
+
+#Obj Cpp Args_Std
+    objcpp_args = []
+    objcpp_link_args = []
+
+#Assembly Args_Std
+    assembly_args = []
+    assembly_link_args = []
+
+#LLVM Args_Std
+    llvm_ir_args = []
+    llvm_ir_link_args = []
+
+#Nasm Args_Std
+    nasm_args = []
+    nasm_link_args = []
+
+#Rust Args_Std
+    rust_args = []
+    rust_link_args = []
+
+#Vala Args_Std
+    vala_args = []
+    vala_link_args = []
+# Args_Build
+

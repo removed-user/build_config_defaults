@@ -1,1 +1,26 @@
-/etc/meson/meson_internal.toml
+[core]
+#Meson/Muon
+unity = 'off'
+layout = 'mirror'
+stdsplit = 'true'
+vsenv = 'false'
+b_ndebug = 'if-release'
+b_asneeded = 'true'
+b_colorout = 'always'
+auto_features = auto
+wrap_mode = 'nodownload'
+backend = 'ninja'
+env_NINJA = ['ninja']
+env_PKG_CONFIG = '/bin/pkg-config'
+default_both_libraries = 'auto'
+prefer_static = true
+buildtype = 'plain'
+force_fallback_for = []
+install_umask = '0022'
+optimization = 'plain'
+python.allow_limited_api = false
+python.bytecompile = 0
+python.platlibdir = ''
+python.purelibdir = ''
+strip = 'strip'
+strip = true

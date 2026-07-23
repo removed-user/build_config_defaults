@@ -1,1 +1,1 @@
-/etc/meson/muon.toml
+muon.pkgconfig = 'exec'

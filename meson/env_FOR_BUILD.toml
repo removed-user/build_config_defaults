@@ -1,1 +1,38 @@
-/etc/meson/env_FOR_BUILD.toml
+#Globals FOR_BUILD!!!!
+      env_CC_FOR_BUILD = []
+      env_CXX_FOR_BUILD = []
+      env_AR_FOR_BUILD = []
+
+#Obj
+      env_OBJC_FOR_BUILD = []
+      env_OBJCXX_FOR_BUILD = []
+
+#Not C/CPP
+      env_NASM_FOR_BUILD = []
+      env_VALAC_FOR_BUILD = []
+
+#Which Linker to use for build
+      env_CC_LD_FOR_BUILD = []
+      env_CXX_LD_FOR_BUILD = []
+
+#Obj
+      env_OBJCXX_LD_FOR_BUILD = []
+      env_OBJC_LD_FOR_BUILD = []
+
+#Not C/CPP
+      env_NASM_LD_FOR_BUILD = []
+      env_VALAC_LD_FOR_BUILD = []
+env_OBJC = []
+env_OBJC_LD = []
+env_OBJCXX = []
+env_OBJCXX_LD = []
+env_NASM = []
+env_NASM_LD = []
+env_VALAC = []
+env_VALAC_LD = []
+# Only Actual variables that I want to set
+# 'env.CC'     = ['/bin/x86_64-linux-gnu-gcc']
+# 'env.CXX'    = ['/bin/x86_64-linux-gnu-g++']
+# 'env.AR'     = ['/bin/x86_64-linux-gnu-gcc-ar']
+# 'env.CC_LD'  = ['/bin/bfd']
+# 'env.CXX_LD' = ['/bin/bfd']
