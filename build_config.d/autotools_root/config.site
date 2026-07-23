@@ -1,0 +1,25 @@
+CONFIG_SITE=/etc/build_config.d/autotools_root/config.site
+. /etc/build_config.d/autotools_root/autotools_mngr/main.bash
+#CC=/bin/musl-gcc
+#GCC=/bin/musl-gcc
+
+#CC=/bin/gcc
+#GCC=/bin/gcc
+
+CARCH="x86_64"
+CHOST="x86_64-linux-gnu"
+# CHOST="x86_64-linux-musl"
+#CPPFLAGS=""
+CFLAGS="-march=native -mtune=generic -O2 -pipe -fno-plt -fexceptions \
+        -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security \
+        -fstack-clash-protection -fcf-protection      \
+        -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -m64 -Wl,--as-needed"
+CXXFLAGS="$CFLAGS -Wp,-D_GLIBCXX_ASSERTIONS"
+LDFLAGS="-Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now \
+         -Wl,-z,pack-relative-relocs  -fuse-ld=/bin/ld  --disable-auto-import"
+LTOFLAGS="-flto=auto"
+#
+SED=/bin/sed
+OPENSSL_PCDIR=/etc/build_config.d/pkgconfig.d/pc_files/
+#TARGET=x86_64-unknown-linux-musl
+_XOPEN_ENH_I18N=0
