@@ -1,0 +1,1 @@
+/etc/meson/bash_meson_dirs_array.bash
